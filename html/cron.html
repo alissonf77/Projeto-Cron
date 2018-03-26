@@ -1,0 +1,31 @@
+<html>
+	<head>
+		<title>Agendador de tarefas</title>
+		</head>
+		<body>
+			<center>
+			<h1>Agendador de tarefas</h1>
+			<br/>
+			<hr/>
+			<form action="cron.cgi" method="post">
+			Minuto: (ex: 0-59) <br/>
+			<input type="text" name="min"><br/><br/>
+			Hora: (ex:0-23)<br/>
+			<input type="text" name="hor"><br/><br/>
+			Dia do mês:(ex:1-31) <br/>
+			<input type="text" name="dia"><br/><br/>
+			Mês:(ex: 1-12_ <br/>
+			<input type="text" name="mes"><br/><br/>
+			Dia da semana:(ex:0-7 0=dom, 1=seg...7=dom) <br/>
+			<input type="text" name="sem"><br/><br/>
+			Usuário:<br/>
+			(Nome do usuario)<br/>
+			<input type="text" name="usr"><br/><br/>
+			Comando<br/>
+			(ex: ping 8.8.8.8 )<br/>
+			<input type="text" name="cmd"><br/><br/>
+			<input type="submit" value="agendar">
+			</form>
+			</center>
+		</body>
+</html>
