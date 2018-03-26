@@ -1,0 +1,33 @@
+s file MUST be edited with the 'visudo' command as root.
+  3 #
+  4 # Please consider adding local content in /etc/sudoers.d/ instead of
+  5 # directly modifying this file.
+  6 #
+  7 # See the man page for details on how to write a sudoers file.
+  8 #
+  9 Defaults    env_reset
+ 10 Defaults    mail_badpass
+ 11 Defaults    secure_path="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+ 12
+ 13 # Host alias specification
+ 14
+ 15 # User alias specification
+ 16
+ 17 # Cmnd alias specification
+ 18
+ 19 # User privilege specification
+ 20 root    ALL=(ALL:ALL) ALL
+ 21 www-data ALL=(root) NOPASSWD: /var/www/html/cgi-bin/script.sh,/var/www/html/cgi-bin/pafire.sh,/var/www/html/cgi-b    in/infire.sh,/var/www/html/cgi-bin/refire.sh,/etc/crontab,/var/www/html/cgi-bin/cron.cgi
+ 22 # Allow members of group sudo to execute any command
+ 23 %sudo   ALL=(ALL:ALL) ALL
+ 24
+ 25 # See sudoers(5) for more information on "#include" directives:
+ 26
+ 27 #includedir /etc/sudoers.d
+~
+~
+~
+~
+~
+~
+
